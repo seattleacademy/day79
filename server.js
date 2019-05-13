@@ -17,7 +17,7 @@ function getData() {
         sensors.counter = counter++
 }
 getData();
-setInterval(getData, 100); //less that 25ms is erratic
+setInterval(getData, 1000); //less that 25ms is erratic
 
 app.all('/all', function(req, res) {
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -33,7 +33,7 @@ var wss = new WebSocketServer({ server: server });
 wss.on('connection', function(ws) {
     var id = setInterval(function() {
         ws.send(JSON.stringify(sensors), function() { /* ignore errors */ });
-    }, 500);
+    }, 1000);
     console.log('connection to client');
     ws.on('close', function() {
         console.log('closing client');
