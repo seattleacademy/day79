@@ -1,0 +1,25 @@
+{
+  "name": "day79",
+  "version": "0.0.1",
+  "description": "telepresence robot server",
+  "main": "server.js",
+  "scripts": {
+    "test": "'node server.js'",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seattleacademy/day79.git"
+  },
+  "author": "Gary Anderson and class",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seattleacademy/day79/issues"
+  },
+  "homepage": "https://github.com/seattleacademy/day79#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "ws": "^7.0.0"
+  }
+}
